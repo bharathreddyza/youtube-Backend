@@ -16,6 +16,8 @@ const app = express();
 //     credentials: true,
 //   })
 // );
+app.use(cors());
+
 dotenv.config();
 
 const connect = () => {
