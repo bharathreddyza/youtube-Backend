@@ -7,8 +7,10 @@ import commentRoutes from "./routes/comments.js";
 import authRoutes from "./routes/auth.js";
 import cookieParser from "cookie-parser";
 import cors  from "cors";
+import bodyParser  from 'body-parser'
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false }))
 
 // app.use(
 //   cors({
